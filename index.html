@@ -7,11 +7,13 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
+<!-- тег nav предназначен только для ОСНОВНОЙ навигации по сайту. Таким образом, он применим только для <ul class="site-navigation">. -->
        <a class="main-header-logo">
         <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Device">
        </a>
        <ul class="site-navigation">
             <li><a href="catalog.html">Каталог товаров</a></li>
+<!-- Каталог товаров не должен находиться в этом списке. При наведении на кнопку Каталог товаров, должен появляться список с навигацией -->
             <li><a href="the-virtual-reality.html">Виртуальная реальность</a></li>
             <li><a href="monopods-for-selfie.html">Моноподы для селфи</a></li>
             <li><a href="action-camera.html">Экшн-камеры</a></li>
@@ -33,6 +35,8 @@
           <ul class="user-navigation">
             <li class="basket-link">Корзина</li>
           </ul>
+<!-- Войти, Сравнить, Корзина должны быть ссылками. И все это элементы одного списка. -->
+
       </nav>
     </header>
 <main class="container">
@@ -113,21 +117,26 @@
 <div class="Logotypes">
   <ul>
     <li style="width: 260px;">
+
+<!-- стили задаем через css -->
       <a href="https://www.dji.com/ru">
         <img src="dji.png" alt="dji">
       </a>
       </li>
       <li style="width: 260px;">
+<!-- стили задаем через css -->
         <a href="http://www.sp-gadgets.com/en">
           <img src="spgadgets.png" alt="spgadgets">
         </a>
       </li>
       <li style="width: 260px;">
+<!-- стили задаем через css -->
         <a href="https://gopro.ru/">
           <img src="gopro.png" alt="gopro">
         </a>
       </li>
       <li style="width: 260px;">
+<!-- стили задаем через css -->
         <a href="https://www.vive.com/">
           <img src="vive.png" alt="vive">
         </a>
@@ -158,6 +167,8 @@
 
 <footer class="page-footer">
   <section class="page-footer">
+<!-- section тут лишний -->
+
 <a href="http://www.device.com">
   <img src="logo.png" alt="Logotype"></a>
 </section>
@@ -180,8 +191,10 @@
   </ul>
   <ul class="user-navigation">
     <li class="basket-link">Корзина</li>
+<!-- Войти, Сравнить, Корзина должны быть ссылками. И все это элементы одного списка. -->
   </ul>
   <p>+7(495) 495-95-95></p>
+<!-- не вижу логотипа академии -->
 </footer>
 </body>
 </html>
