@@ -27,6 +27,7 @@
        </nav>
        <ul>
             <li class="login">
+<!-- Здесь вместо Войти должен быть логин пользователя -->
             <a href="http://device.ru" title="Войти">Войти</a>
           </li>
           <li class="login-output">
@@ -44,6 +45,7 @@
 <main class="container">
   <h1 class="page-title">Моноподы для селфи</h1>
    <ul class="breadcrumbs">
+<!-- Для разметки хлебных крошек целесообразно использовать нумерованый список (тег ol). Так как в нумерованном списке важна последовательность находящихся в нем элементов -->
     <li><a href="index.html">Главная</a></li>
     <li><a href="catalog.html">Каталог товаров</a></li>
     <li class="breadcrumbs-current">Моноподы для селфи</li>
@@ -64,8 +66,10 @@
     <legend>Bluetooth</legend>
     <input type="checkbox">есть<br>
     <input type="checkbox">нет<br>
-  </fielset> 
+  </fielset>
   <input type="submit" value="Показать">
+<!-- input type="submit" устаревший вариант отправки формы. Сейчас актуально использовать button type="submit" -->
+<!-- К разметке формы вернемся на 4-м модуле -->
 </form>
 </section>
 
@@ -78,10 +82,13 @@
      </h3>
       <p class="catalog-item-image">
         <a href="catalog-item.html">
+<!-- Ссылкой на отдельную страницу товара является только название товара. См. пункт 3.13 Технического задания -->
           <img src="amateur.svg" width="360" height="380" alt="Любительская селфи-палка">
         </a>
       </p>
+<!-- Цену нужно обернуть не в абзац, а в span, и расположить внутри заголовка с названием товара, но не в ссылке. -->
         <p>500 руб.</p>
+<!-- Не разметила всплывающий при наведении на карточку товара блок с кнопками -->
     </li>
     <li class="catalog-item">
      <h3>
@@ -121,11 +128,13 @@
 
 <section class="page">
   <ul class="pagination-list">
+<!-- В пагинации тоже важна последовательность элементов списка, поэтому целесообразнее использовать нумерованный список -->
   <li class="pagination-item pagenation-item-current"><a>1</a></li>
   <li class="pagination-item"><a href="#">2</a></li>
   <li class="pagination-item"><a href="#">3</a></li>
 </ul>
 <span class="button catalog">
+<!-- Кнопки Назад и Вперед можно разместить внутри списка  ul class="pagination-list". Так как они имеют непосредственное отношение к пагинации -->
   <button>Назад</button>
   <button>Вперед</button>
 </span>
@@ -133,6 +142,7 @@
 </main>
 
 <footer class="page-footer">
+<!-- по футеру замечания такие же как в индексе -->
   <a href="https://htmlacademy.ru/intensive/htmlcss">
     <img src="logo.svg" width="166" height="53" alt="Device">
   </a>
@@ -151,6 +161,7 @@
     <li class="login">
     <a href="http://device.ru" title="Войти">Войти</a>
   </li>
+<!-- Тут должен быть Валентин Петухов и Выйти См. макет.  -->
     <li class="compare">
     <a href="http://device.ru" title="Сравнить">Сравнить</a>
   </li>
