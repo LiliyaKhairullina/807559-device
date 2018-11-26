@@ -24,11 +24,10 @@
             <li><a href="garantiya.html">Гарантия</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
-       </nav>
-       <ul>
-            <li class="login">
-<!-- Здесь вместо Войти должен быть логин пользователя -->
-            <a href="http://device.ru" title="Войти">Войти</a>
+        </nav>
+        <ul>
+          <li class="login">
+            <a href="http://device.ru" title="Валентин Петухов">Валентин Петухов</a>
           </li>
           <li class="login-output">
             <a href="http://device.ru" title="Выйти">Выйти</a>
@@ -44,12 +43,11 @@
 
 <main class="container">
   <h1 class="page-title">Моноподы для селфи</h1>
-   <ul class="breadcrumbs">
-<!-- Для разметки хлебных крошек целесообразно использовать нумерованый список (тег ol). Так как в нумерованном списке важна последовательность находящихся в нем элементов -->
+   <ol class="breadcrumbs">
     <li><a href="index.html">Главная</a></li>
     <li><a href="catalog.html">Каталог товаров</a></li>
     <li class="breadcrumbs-current">Моноподы для селфи</li>
-   </ul>
+   </ol>
 
 <section class="filter">
 <h2>Фильтр</h2>
@@ -67,9 +65,7 @@
     <input type="checkbox">есть<br>
     <input type="checkbox">нет<br>
   </fielset>
-  <input type="submit" value="Показать">
-<!-- input type="submit" устаревший вариант отправки формы. Сейчас актуально использовать button type="submit" -->
-<!-- К разметке формы вернемся на 4-м модуле -->
+  <button type="submit" value="Submit">Показать</button>
 </form>
 </section>
 
@@ -78,80 +74,81 @@
   <ul class="catalog-list">
     <li class="catalog-item">
      <h3>
-      <a href="catalog-item.html">Любительская селфи-палка</a>
+      <a href="amateur-selfie-stick.html">Любительская селфи-палка</a>
+      <span class="catalog-item-price">500 руб.</span>
      </h3>
       <p class="catalog-item-image">
-        <a href="catalog-item.html">
-<!-- Ссылкой на отдельную страницу товара является только название товара. См. пункт 3.13 Технического задания -->
+        <a href="amateur-selfie-stick.html">
           <img src="amateur.svg" width="360" height="380" alt="Любительская селфи-палка">
         </a>
       </p>
-<!-- Цену нужно обернуть не в абзац, а в span, и расположить внутри заголовка с названием товара, но не в ссылке. -->
-        <p>500 руб.</p>
-<!-- Не разметила всплывающий при наведении на карточку товара блок с кнопками -->
+      <a class="button" href="#">В корзину</a>
+      <a class="button" href="#">Добавить к сравнению</a>
     </li>
     <li class="catalog-item">
      <h3>
-      <a href="catalog-item.html">Профессиональная селфи-палка</a>
+      <a href="professional-selfie-stick.html">Профессиональная селфи-палка</a>
+      <span class="catalog-item-price">1 500 руб.</span>
      </h3>
       <p class="catalog-item-image">
-        <a href="catalog-item.html">
+        <a href="professional-selfie-stick.html">
           <img src="professional.svg" width="360" height="380" alt="Профессиональная селфи-палка">
         </a>
       </p>
-      <p>1500 руб.</p>
+      <a class="button" href="#">В корзину</a>
+      <a class="button" href="#">Добавить к сравнению</a>
     </li>
     <li class="catalog-item">
      <h3>
-      <a href="catalog-item.html">Непотопляемая селфи-палка</a>
+      <a href="unsinkable-selfie-stick.html">Непотопляемая селфи-палка</a>
+      <span class="catalog-item-price">2 500 руб.</span>
      </h3>
       <p class="catalog-item-image">
-        <a href="catalog-item.html">
+        <a href="unsinkable-selfie-stick.html">
           <img src="professional.svg" width="360" height="380" alt="Непотопляемая селфи-палка">
         </a>
       </p>
-        <p>2500 руб.</p>
+      <a class="button" href="#">В корзину</a>
+      <a class="button" href="#">Добавить к сравнению</a>
     </li>
     <li class="catalog-item">
      <h3>
-      <a href="catalog-item.html">Селфи-палка «Следуй за мной»</a>
+      <a href="self-stick-follow-me.html">Селфи-палка «Следуй за мной»</a>
+      <span class="catalog-item-price">4 900 руб.</span>
      </h3>
       <p class="catalog-item-image">
-        <a href="catalog-item.html">
+        <a href="self-stick-follow-me.html">
           <img src="follow-me.svg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
         </a>
       </p>
-        <p>2500 руб.</p>
+      <a class="button" href="#">В корзину</a>
+      <a class="button" href="#">Добавить к сравнению</a>
        </li>
      </ul>
    </section>
 
 <section class="page">
-  <ul class="pagination-list">
-<!-- В пагинации тоже важна последовательность элементов списка, поэтому целесообразнее использовать нумерованный список -->
-  <li class="pagination-item pagenation-item-current"><a>1</a></li>
-  <li class="pagination-item"><a href="#">2</a></li>
-  <li class="pagination-item"><a href="#">3</a></li>
-</ul>
-<span class="button catalog">
-<!-- Кнопки Назад и Вперед можно разместить внутри списка  ul class="pagination-list". Так как они имеют непосредственное отношение к пагинации -->
+  <ol class="pagination-list">
+    <li class="pagination-item pagenation-item-current"><a>1</a></li>
+    <li class="pagination-item"><a href="#">2</a></li>
+    <li class="pagination-item"><a href="#">3</a></li>
+ </ol>
   <button>Назад</button>
   <button>Вперед</button>
-</span>
 </section>
 </main>
 
-<footer class="page-footer">
-<!-- по футеру замечания такие же как в индексе -->
-  <a href="https://htmlacademy.ru/intensive/htmlcss">
-    <img src="logo.svg" width="166" height="53" alt="Device">
-  </a>
+<footer class="footer">
+  <a class="footer-logo">
+   <img src="img/index-logo.svg" width="166" height="53" alt="Логотип Device"></a>
   <p class="footer-contacts">
     г. Москва, ул. Строителей, 15
   </p>
-  <b>Доставка</b>
-  <b>Гарантия</b>
-  <b>Контакты</b>
+   <ul>
+   <li><a href="https://device.ru/dostavka">Доставка</a></li>
+   <li><a href="https://device.ru/guarantee">Гарантия</a></li>
+   <li><a href="https://device.ru/contacts">Контакты</a></li>
+  </ul>
   <ul>
     <li><a class="social-button" href="#">Facebook</a></li>
     <li><a class="social-button" href="#">Instagram</a></li>
@@ -159,9 +156,11 @@
   </ul>
   <ul>
     <li class="login">
-    <a href="http://device.ru" title="Войти">Войти</a>
-  </li>
-<!-- Тут должен быть Валентин Петухов и Выйти См. макет.  -->
+      <a href="http://device.ru" title="Валентин Петухов">Валентин Петухов</a>
+    </li>
+    <li class="login-output">
+      <a href="http://device.ru" title="Выйти">Выйти</a>
+    </li>
     <li class="compare">
     <a href="http://device.ru" title="Сравнить">Сравнить</a>
   </li>
@@ -170,6 +169,9 @@
   </li>
   </ul>
   <a href="tel:+74954959595">+7(495) 495-95-95</a>
-</footer>
-  </body>
+  <a href="https://htmlacademy.ru/intensive/htmlcss">
+    <img src="logo.svg" width="27" height="33" alt="HTMLacademy">
+  </a>
+  </footer>
+</body>
 </html>
