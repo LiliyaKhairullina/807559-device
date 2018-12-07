@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="external.css">
   </head>
   <body>
     <header class="main-header">
-       <a class="main-header-logo">
+       <a class="main-header-logo" href="index.html">
         <img src="img/logo.svg" width="168" height="53" alt="Логотип Device">
        </a>
        <form class="search-form">
@@ -29,15 +30,15 @@
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
        </nav>
-          <ul>
+          <ul class="user-navigation">
             <li class="login">
-            <a href="http://device.ru" title="Войти">Войти</a>
+            <a href="login.html" title="Войти">Войти</a>
           </li>
             <li class="compare">
-            <a href="http://device.ru" title="Сравнить">Сравнить</a>
+            <a href="compare.html" title="Сравнить">Сравнить</a>
           </li>
             <li class="basket">
-            <a href="http://device.ru" title="Корзина">Корзина</a>
+            <a href="basket.html" title="Корзина">Корзина</a>
           </li>
           </ul>
           </header>
@@ -122,9 +123,13 @@
         </p>
         <p class="hits-block-item-key">
           <a class="button" href="info.html">Подробнее</a>
-          <input type="radio" name="queston-three" value="1">
-          <input type="radio" name="queston-three" value="2">
-          <input type="radio" name="queston-three" value="3" checked>
+          <input type="radio" name="slider" id="slider-switch-1">
+          <input type="radio" name="slider" id="slider-switch-2">
+          <input type="radio" name="slider" id="slider-switch-3" checked>
+          <div class="slider-switch__wrapper">
+            <label for="slider-switch-1"></label>
+            <label for="slider-switch-2"></label>
+            <label for="slider-switch-3"></label>
         </p>
         <table>
           <tr>
@@ -138,7 +143,7 @@
         </table>
       </li>
     </ul>
-</section>
+  </section>
 
 <section class="popular">
       <h3 class="visually-hidden">Товары</h3>
@@ -211,26 +216,26 @@
   <ul>
     <li>
       <a href="https://www.dji.com/ru">
-        <img class="brands__1" src="img/dji.jpg" alt="dji">
-        <img class="brands__1-hover" src="img/dji-hover.jpg" alt="dji">
+        <img class="brands__1" src="img/dji.png" alt="dji">
+        <img class="brands__1-hover" src="img/dji-hover.png" alt="dji">
        </a>
       </li>
       <li>
         <a href="http://www.sp-gadgets.com/en">
-          <img class="brands__2" src="img/spgadgets.jpg" alt="spgadgets">
-          <img class="brands__2-hover" src="img/spgadgets-hover.jpg" alt="spgadgets">
+          <img class="brands__2" src="img/spgadgets.png" alt="spgadgets">
+          <img class="brands__2-hover" src="img/spgadgets-hover.png" alt="spgadgets">
         </a>
       </li>
       <li>
         <a href="https://gopro.ru/">
-          <img class="brands__3" src="img/gopro.jpg" alt="gopro">
-          <img class="brands__3-hover" src="img/gopro-hover.jpg" alt="gopro">
+          <img class="brands__3" src="img/gopro.png" alt="gopro">
+          <img class="brands__3-hover" src="img/gopro-hover.png" alt="gopro">
         </a>
       </li>
       <li>
         <a href="https://www.vive.com/">
-          <img class="brands__3" src="img/vive.jpg" alt="vive">
-          <img class="brands__3-hover" src="img/vive-hover.jpg" alt="vive">
+          <img class="brands__3" src="img/vive.png" alt="vive">
+          <img class="brands__3-hover" src="img/vive-hover.png" alt="vive">
         </a>
       </li>
     </ul>
@@ -254,7 +259,35 @@
       <a href="#">
         <img src="img/map.jpg" width="560" height="222" alt="Карта"></a>
         <a class="button" href="contacts.html">Напишите нам</a>
-</main>
+  </section>
+
+  <section class="modal-map">
+    <h3 class="visually-hidden">Контакты</h3>
+    <p>
+      <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей, 15, г. Москва">
+    </p>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+
+  <section class="letter">
+    <h3 class="visually-hidden">Напишите нам</h3>
+      <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="letter-item">
+          <label for="letter-name">Ваше имя:</label>
+          <input id="letter-name" type="text" name="name" value="Имя Фамилия" placeholder="Имя Фамилия">
+        </p>
+        <p class="letter-item">
+          <label for="url">Ваш e-mail:</label>
+          <input id="url" type="url" name="url" placeholder="email@example.com" required tabindex="2">
+        </p>
+        <p class="letter-item">
+          <label for="letter-content">Текст письма</label>
+          <textarea name="commet" id="letter-content" rows="7" placeholder="В свободной форме" required tabindex="3">Текст письма</textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
 
 <footer class="footer">
   <a class="footer-logo">
@@ -268,9 +301,9 @@
    <li><a href="https://device.ru/contacts">Контакты</a></li>
   </ul>
   <ul>
-    <li><a class="social-button" href="#">Facebook</a></li>
-    <li><a class="social-button" href="#">Instagram</a></li>
-    <li><a class="social-button" href="#">Twitter</a></li>
+    <li><a href="https://faceebook.com/" aria-label="Фейсбук">Facebook</a></li>
+    <li><a href="https://instagram.com" aria-label="Инстаграмм">Instagram</a></li>
+    <li><a href="https://Twitter.com" aria-label="Твиттер">Twitter</a></li>
   </ul>
   <ul>
     <li class="login">
