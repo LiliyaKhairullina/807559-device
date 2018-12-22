@@ -1,58 +1,56 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header class="main-header">
-       <a class="main-header-logo" href="">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="">
         <img src="img/logo.svg" width="168" height="53" alt="Логотип Device">
-       </a>
-       <form class="search-form">
+      </a>
+      <form class="search-form">
         <input type="search" placeholder="Поиск по сайту" class="search-form__input">
         <button type="submit" class="search-form__button">Найти</button>
-       </form>
-
-       <nav>
-        <ul class="menu">
-          <li><a href="catalog.html">Каталог товаров</a></li>
-        </ul>
-          <ul class="submenu">
-            <li><a href="the-virtual-reality.html">Виртуальная реальность</a></li>
-            <li><a href="monopods-for-selfie.html">Моноподы для селфи</a></li>
-            <li><a href="action-camera.html">Экшн-камеры</a></li>
-            <li><a href="fitness-bracelets.html">Фитнес-браслеты</a></li>
-            <li><a href="smart-watch.html">Умные часы</a></li>
-            <li><a href="quadcopters.html">Квадрокоптеры</a></li>
-          </ul>
-          <ul class="service">
+      </form>
+      <ul class="user-navigation">
+        <li class="login">
+          <a href="login.html" title="Войти">Войти</a></li>
+        <li class="compare">
+          <a href="compare.html" title="Сравнить">Сравнить</a></li>
+        <li class="basket">
+          <a href="basket.html" title="Корзина">Корзина</a></li>
+      </ul>
+      <div class="main-navigation-wrapper">
+        <div class="menu-container">
+          <ul class="menu">
+            <li><a href="catalog.html">Каталог товаров</a>
+              <ul class="submenu">
+                <li><a href="the-virtual-reality.html">Виртуальная реальность</a></li>
+                <li><a href="catalog.html">Моноподы для селфи</a></li>
+                <li><a href="action-camera.html">Экшн-камеры</a></li>
+                <li><a href="fitness-bracelets.html">Фитнес-браслеты</a></li>
+                <li><a href="smart-watch.html">Умные часы</a></li>
+                <li><a href="quadcopters.html">Квадрокоптеры</a></li>
+              </ul>
             <li><a href="dostavka.html">Доставка</a></li>
             <li><a href="garantiya.html">Гарантия</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
-       </nav>
-          <ul class="user-navigation">
-            <li class="login">
-            <a href="login.html" title="Войти">Войти</a>
-          </li>
-            <li class="compare">
-            <a href="compare.html" title="Сравнить">Сравнить</a>
-          </li>
-            <li class="basket">
-            <a href="basket.html" title="Корзина">Корзина</a>
-          </li>
-          </ul>
-          </header>
+        </div>
+      </div>
+  </nav>
+</header>
 
 <main class="container">
   <h1 class="visually-hidden">Device</h1>
 
-<section class="hits-block">
-  <h2 class="visually-hidden">Хиты продаж</h2>
+  <section class="hits-block">
+    <h2 class="visually-hidden">Хиты продаж</h2>
     <ul class="hits-block-list">
       <li class="hits-block-item">
         <a href="hits-block-item.html">
@@ -85,7 +83,6 @@
           </tr>
         </table>
       </li>
-      
       <li class="hits-block-item">
         <a href="hits-block-item.html">
         <h3>Худеем правильно!</h3>
@@ -113,7 +110,6 @@
           </tr>
         </table>
       </li>
-
       <li class="hits-block-item">
         <a href="hits-block-item.html">
         <h3>Порхает как бабочка,<br> жалит как пчела!</h3>
@@ -270,8 +266,11 @@
     </ul>
 </section>
 
-<section class="info">
-  <h3>О Нас</h3>
+
+<div class="index-columns">
+
+  <section class="info">
+  <h3>О нас</h3>
     <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
     <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
     <ul class="transport-company">
@@ -289,51 +288,36 @@
         <img src="img/map.jpg" width="560" height="222" alt="Карта"></a>
         <a class="button" href="contacts.html">Напишите нам</a>
   </section>
-
-  <section class="modal-map">
-    <h3 class="visually-hidden">Карта</h3>
-    <p>
-      <img  class="big-map" src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей, 15, г. Москва">
-    </p>
-    <button class="modal-close" type="button">Закрыть</button>
-  </section>
-
-  <section class="letter">
-    <h3 class="visually-hidden">Напишите нам</h3>
-      <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="letter-item">
-          <label for="letter-name">Ваше имя:</label>
-          <input id="letter-name" type="text" name="name" value="Имя Фамилия" placeholder="Имя Фамилия">
-        </p>
-        <p class="letter-item">
-          <label for="url">Ваш e-mail:</label>
-          <input id="url" type="url" name="url" placeholder="email@example.com" required>
-        </p>
-        <p class="letter-item">
-          <label for="letter-content">Текст письма</label>
-          <textarea id="letter-content" required name="comment" cols="45" rows="7" aria-required="true">В свободной форме</textarea>
-        </p>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-    </section>
-  </main>
+</div>
+</main>
 
 <footer class="main-footer">
+  <div class="footer-content">
+    <div class="footer-home">
   <a class="footer-logo" href="">
    <img src="img/logo-footer.svg" width="166" height="53" alt="Логотип Device"></a>
     <p class="footer-contacts">
     г. Москва, ул. Строителей, 15
   </p>
-   <ul class="footer-service">
+    <svg><rect width="80" height="7"/></svg>
+  </div>
+   
+  <div class="footer-service-social">
+    <ul class="footer-service">
    <li><a href="https://device.ru/dostavka">Доставка</a></li>
    <li><a href="https://device.ru/guarantee">Гарантия</a></li>
    <li><a href="https://device.ru/contacts">Контакты</a></li>
   </ul>
-  <ul class="footer-social">
-    <li><a href="https://faceebook.com/" aria-label="Фейсбук">Facebook</a></li>
-    <li><a href="https://instagram.com" aria-label="Инстаграмм">Instagram</a></li>
-    <li><a href="https://Twitter.com" aria-label="Твиттер">Twitter</a></li>
+  <div class="footer-social-icons">
+    <ul class="footer-social">
+    <li><a class="social-button" href="https://faceebook.com/" aria-label="Фейсбук">Facebook</a></li>
+    <li><a class="social-button" href="https://instagram.com" aria-label="Инстаграмм">Instagram</a></li>
+    <li><a class="social-button" href="https://Twitter.com" aria-label="Твиттер">Twitter</a></li>
   </ul>
+  </div>
+</div>
+
+  <div class="footer-container">
   <ul class="user-zone">
     <li class="login">
     <a href="http://device.ru" title="Войти">Войти</a>
@@ -345,10 +329,15 @@
     <a href="http://device.ru" title="Корзина">Корзина</a>
   </li>
   </ul>
-  <a href="tel:+74954959595">+7(495) 495-95-95</a>
+    <p class="footer-telephone">
+    <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+  </p>
   <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
-    <img src="img/logo-html.svg" width="27" height="33" alt="HTMLacademy">
+  <img src="img/logo-html.svg" width="27" height="33" alt="HTMLacademy">
   </a>
+</div>
+
+</div>
   </footer>
 </body>
 </html>
