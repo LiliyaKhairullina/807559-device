@@ -11,6 +11,7 @@
   <body class="inner-page">
 
     <header class="main-header">
+      <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
         <img src="img/logo.svg" width="168" height="53" alt="Логотип Device">
       </a>
@@ -18,25 +19,19 @@
         <input type="search" placeholder="Поиск по сайту" class="search-form__input">
         <button type="submit" class="search-form__button">Найти</button>
        </form>
-      <nav>
-        <ul class="menu">
-          <li><a href="catalog.html">Каталог товаров</a></li>
-        </ul>
-          <ul class="submenu">
-            <li><a href="the-virtual-reality.html">Виртуальная реальность</a></li>
-            <li><a href="monopods-for-selfie.html">Моноподы для селфи</a></li>
-            <li><a href="action-camera.html">Экшн-камеры</a></li>
-            <li><a href="fitness-bracelets.html">Фитнес-браслеты</a></li>
-            <li><a href="smart-watch.html">Умные часы</a></li>
-            <li><a href="quadcopters.html">Квадрокоптеры</a></li>
+
+
+     <div class="main-navigation-wrapper">
+        <div class="menu-container">
+          <div class="main-navigation">
+          <ul class="menu">
+          <li><a href="catalog.html">Каталог товаров</a>
+          <li><a href="dostavka.html">Доставка</a></li>
+          <li><a href="garantiya.html">Гарантия</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
           </ul>
-          <ul class="service">
-            <li><a href="dostavka.html">Доставка</a></li>
-            <li><a href="garantiya.html">Гарантия</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-          </ul>
-       </nav>
-        <ul class="user-navigation">
+        </div>
+          <ul class="user-navigation">
           <li class="login">
             <a href="login.html" title="Валентин Петухов">Валентин Петухов</a>
           </li>
@@ -50,9 +45,13 @@
             <a href="basket.html" title="Корзина">Корзина</a>
           </li>
         </ul>
+      </div>
+      </div>
+    </nav>
     </header>
 
 <main class="container">
+
   <h1 class="page-title">Моноподы для селфи</h1>
    <ol class="breadcrumbs">
     <li><a href="index.html">Главная</a></li>
@@ -60,9 +59,10 @@
     <li class="breadcrumbs-current">Моноподы для селфи</li>
    </ol>
 
-<section class="filter">
-<h2 class="page-title">Фильтр:</h2>
-<form action="form.php" method="GET">
+<div class="catalog-columns">
+  <section class="filter">
+  <h2 class="page-title">Фильтр:</h2>
+  <form action="form.php" method="GET">
    <fieldset>
     <legend>Стоимость</legend>
     <div class="range-filter">
@@ -124,7 +124,9 @@
 
 <section class="catalog">
   <h2 class="visually-hidden">Список моноподов</h2>
+
   <ul class="catalog-list">
+
     <li class="catalog-item">
       <a href="catalog-item.html">
       <h3>
@@ -143,6 +145,7 @@
         <span class="catalog-item-price">500 руб.</span>
       </p>
     </li>
+    
     <li class="catalog-item">
       <a href="catalog-item.html">
      <h3>
@@ -191,8 +194,10 @@
         <a class="button" href="#">В корзину</a>
         <a class="button-add" href="#">Добавить к сравнению</a>
         <span class="catalog-item-price">4 900 руб.</span>
+      </p>
        </li>
      </ul>
+   </div>
    </section>
 
 <section class="page">
@@ -204,6 +209,7 @@
   <button>Назад</button>
   <button>Вперед</button>
 </section>
+</p>
 </main>
 
 <footer class="main-footer">

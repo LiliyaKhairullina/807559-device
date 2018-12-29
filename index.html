@@ -8,11 +8,17 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="">
         <img src="img/logo.svg" width="168" height="53" alt="Логотип Device">
       </a>
+
+      <div class="main-navigation-wrapper">     
+              
+      <div class="user">  
       <form class="search-form">
         <input type="search" placeholder="Поиск по сайту" class="search-form__input">
         <button type="submit" class="search-form__button">Найти</button>
@@ -24,11 +30,13 @@
           <a href="compare.html" title="Сравнить">Сравнить</a></li>
         <li class="basket">
           <a href="basket.html" title="Корзина">Корзина</a></li>
-      </ul>
-      <div class="main-navigation-wrapper">
-        <div class="menu-container">
+        </ul>
+      </div>
+      </div>
+      
+      <div class="menu-container">          
           <ul class="menu">
-            <li><a href="catalog.html">Каталог товаров</a>
+              <li class="menu-catalog"><a href="catalog.html">Каталог товаров</a>
               <ul class="submenu">
                 <li><a href="the-virtual-reality.html">Виртуальная реальность</a></li>
                 <li><a href="catalog.html">Моноподы для селфи</a></li>
@@ -37,12 +45,13 @@
                 <li><a href="smart-watch.html">Умные часы</a></li>
                 <li><a href="quadcopters.html">Квадрокоптеры</a></li>
               </ul>
-            <li><a href="dostavka.html">Доставка</a></li>
-            <li><a href="garantiya.html">Гарантия</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+            </li>
+            <li class="menu-dostavka"><a href="dostavka.html">Доставка</a></li>
+            <li class="menu-garantiya"><a href="garantiya.html">Гарантия</a></li>
+            <li class="menu-contacts"><a href="contacts.html">Контакты</a></li>
           </ul>
-        </div>
       </div>
+    
   </nav>
 </header>
 
@@ -52,7 +61,41 @@
   <section class="hits-block">
     <h2 class="visually-hidden">Хиты продаж</h2>
     <ul class="hits-block-list">
-      <li class="hits-block-item">
+      
+      <li class="hits-block-item-1">
+        <a href="hits-block-item.html">
+        <a href="hits-block-item.html">
+        <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи">
+          </a>
+          <h3>Делай селфи,<br>как Бен Стиллер!</h3>
+        </a>
+        <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
+           Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+        </a>
+        <p class="hits-block-item-image">
+         </p>
+        <p class="hits-block-item-key">
+          <a class="button" href="info.html">Подробнее</a>
+          <input type="radio" name="queston-one" value="1" checked>
+          <input type="radio" name="queston-one" value="2">
+          <input type="radio" name="queston-one" value="3">
+        </p>
+        <table>
+          <tr class="property">
+            <td>8,5м</td>
+            <td>5кг</td>
+            <td>Карбон</td>
+          </tr>
+          <tr class="object">
+            <td>Длина палки</td>
+            <td>Вес палки</td>
+            <td>Материал</td>
+          </tr>
+        </table>
+      </li>
+
+<!--
+      <li class="hits-block-item-1">
         <a href="hits-block-item.html">
         <h3>Делай селфи,<br>как Бен Стиллер!</h3>
         </a>
@@ -82,8 +125,9 @@
             <td>Материал</td>
           </tr>
         </table>
-      </li>
-      <li class="hits-block-item">
+      </li>-->
+
+      <li class="hits-block-item-2">
         <a href="hits-block-item.html">
         <h3>Худеем правильно!</h3>
         </a>
@@ -110,7 +154,8 @@
           </tr>
         </table>
       </li>
-      <li class="hits-block-item">
+
+      <li class="hits-block-item-3">
         <a href="hits-block-item.html">
         <h3>Порхает как бабочка,<br> жалит как пчела!</h3>
         </a>
@@ -149,52 +194,52 @@
 
 <section class="popular">
       <h3 class="visually-hidden">Товары</h3>
-      <ul>
-        <li>
+      <ul class="popular-icons">
+        <li class="popular-icons-item">
         <a href="catalog-item.html">
-          <img src="img/popular-1.svg" width="160" height="160" alt="Очки">
+          <img src="img/popular-1.svg" width="97" height="55" alt="Очки">
         </a>
         <a class="popular-name" href="catalog-item.html">
         <svg><rect width="160" height="160"/></svg>
         <p class="popular-title">Виртуальная реальность</p>
         </a>
       </li>
-      <li>
+      <li class="popular-icons-item">
         <a href="catalog-item.html">
-          <img src="img/popular-2.svg" width="160" height="160" alt="Монопод">
+          <img src="img/popular-2.svg" width="86" height="117" alt="Монопод">
         </a>
         <a class="popular-name" href="catalog-item.html">
           <svg><rect width="160" height="160"/></svg>
           <p class="popular-title">Моноподы для селфи</p>
         </a>
       </li>
-      <li>
+      <li class="popular-icons-item popular-3">
         <a href="catalog-item.html">
-          <img src="img/popular-3.svg" width="160" height="160" alt="Экшн-камера"></a>
+          <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камера"></a>
         <a class="popular-name" href="catalog-item.html">
           <svg><rect width="160" height="160"/></svg>
           <p class="popular-title">Экшн-камера</p>
         </a>
       </li>
-      <li>
+      <li class="popular-icons-item popular-4">
         <a href="catalog-item.html">
-          <img src="img/popular-4.svg" width="160" height="160" alt="Браслеты"></a>
+          <img src="img/popular-4.svg" width="107" height="65" alt="Браслеты"></a>
         <a class="popular-name" href="catalog-item.html">
           <svg><rect width="160" height="160"/></svg>
           <p class="popular-title">Фитнес-браслеты</p>
         </a>
       </li>
-      <li>
+      <li class="popular-icons-item">
         <a href="catalog-item.html">
-          <img src="img/popular-5.svg" width="160" height="160" alt="Часы"></a>
+          <img src="img/popular-5.svg" width="56" height="98" alt="Часы"></a>
         <a class="popular-name" href="catalog-item.html">
           <svg><rect width="160" height="160"/></svg>
           <p class="popular-title">Умные часы</p>
         </a>
       </li>
-      <li>
+      <li class="popular-icons-item">
         <a href="catalog-item.html">
-          <img src="img/popular-6.svg" width="160" height="160" alt="Квадрокоптеры"></a>
+          <img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры"></a>
         <a class="popular-name" href="catalog-item.html">
           <svg><rect width="160" height="160"/></svg>
           <p class="popular-title">Квадрокоптеры</p>
@@ -203,7 +248,7 @@
     </section>
 
 <section class="excellence">
-  <div class="container">
+  <div class="excellence-container">
   <h2 class="visually-hidden">Преимущества</h2>
       <input class="services-slide-btn " type="radio" id="services-1" name="services-toggle" checked="">
   <input class="services-slide-btn visual-hidden" type="radio" id="services-2" name="services-toggle">
